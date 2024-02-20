@@ -5,7 +5,7 @@ body {
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ddd;
+  background-color: #f2f2f2;
   line-height: 1.65;
   padding-bottom: 1000px;
 }
@@ -16,7 +16,7 @@ body {
   font-size: 20px;
   margin: 50px auto;
   margin-top: 150px;
-  background-color: #fff;
+  background-color: #ffb6c1;
   padding: 20px;
   box-sizing: border-box;
   display: grid;
@@ -25,9 +25,17 @@ body {
 }
 
 .sidebar-satu {
-  grid-area: nav;
+    grid-area: nav;
+    background-color: #3498db; 
+    color: #fff; 
+    padding: 15px;
+    border-radius: 5px; 
 }
 
 .sidebar-dua {
-  grid-area: aside;
+    grid-area: aside;
+    background-color: #3498db; 
+    color: #fff; 
+    padding: 15px;
+    border-radius: 5px;
 }
