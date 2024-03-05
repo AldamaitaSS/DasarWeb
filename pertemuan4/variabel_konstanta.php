@@ -18,16 +18,17 @@
 $angka1 = 10;
 $angka2 = 5;
 $hasil = $angka1 + $angka2;
-echo "Hasil penjumlahan $angka1 dan $angka2 adalah $hasil.\n";
+echo "Hasil penjumlahan $angka1 dan $angka2 adalah $hasil.<br>";
 
 $benar = true;
 $salah = false;
-echo "Variabel benar : $benar,\nVariabel salah : $salah\n";
+echo "Variabel benar : $benar,<br> Variabel salah : $salah<br>";
 
 // Mendefinisikan konstanta untuk nilai tetap
 define("NAMA_SITUS", "WebsiteKu.com");
 define("TAHUN_PENDIRIAN", 2023);
 
-echo "Selamat datang di " . NAMA_SITUS . ",\nsitus yang di dirikan pada tahun " . TAHUN_PENDIRIAN . ".\n";
+echo "Selamat datang di " . NAMA_SITUS . ",<br>situs yang di dirikan pada tahun " . TAHUN_PENDIRIAN . ".<br>";
+
 
 ?> 
