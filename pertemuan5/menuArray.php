@@ -33,11 +33,18 @@ $menu = [
 ],
 ];
 
-function tampilkanMenuBertingkat (array $menu) {
+function tampilkanMenuBertingkat(array $menu) {
     echo "<ul>";
-    foreach ($menu as $key => $item){
-        echo "<li>{$item['nama']}</li>";
-    } echo "</ul>";
+    foreach ($menu as $item) {
+        echo "<li>{$item['nama']}";
+        // Periksa apakah item memiliki subMenu
+        if (isset($item['subMenu']) && is_array($item['subMenu'])) {
+            // Jika iya, panggil fungsi ini sendiri dengan subMenu sebagai argumen
+            tampilkanMenuBertingkat($item['subMenu']);
+        }
+        echo "</li>";
+    }
+    echo "</ul>";
 }
 
 tampilkanMenuBertingkat($menu);
