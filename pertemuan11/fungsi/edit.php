@@ -15,7 +15,7 @@ if (!empty($_SESSION['username'])) {
             pesan('danger', "Mengubah Jabatan Karena: " . mysqli_error($koneksi));
         }
         header("Location: ../index.php?page=jabatan");
-    } elseif (!empty($_GET['anggota'])) {
+    }  elseif (!empty($_GET['anggota'])) {
         $user_id = antiinjection($koneksi, $_POST['id']);
         $nama = antiinjection($koneksi, $_POST['nama']);
         $jabatan = antiinjection($koneksi, $_POST['jabatan']);
